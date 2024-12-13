@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JS #1</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Notice how each div has an 'onclick' attribute which links to a function in the JS file -->
+    <div class="top-1">
+      <div class="center-content rest topsides black gaming_text">
+        <p style="color: rgb(255, 255, 255)" onclick="restRestart()" id="txt">
+          もともとはパラス島にいたヤドカリで、放射能の影響で巨大化する前にパラス島で核実験が行われ、突然変異で生まれた。後に反乱軍はこの巨大なカニを捕獲し、殻として使用するためにデンチュリオン・タンクをくりぬいて与えた。
+        </p>
+      </div>
+      <div class="center-content topmid">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/sW58gVNemxg?autoplay=1&mute=1&loop=1&playlist=sW58gVNemxg"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          id="video"
+        ></iframe>
+      </div>
+      <div class="center-content topsides black">
+        <img
+          src="images/Crab.gif"
+          class="cursor"
+          onclick="levelChange()"
+          id="crab"
+        />
+      </div>
+    </div>
+
+    <div class="bottom-1">
+      <div class="botrow">
+        <div class="imgrow green">
+          <div class="center-content imgrowhalf tankback">
+            <img src="images/tank.gif" class="cursor" onclick="coolTank()" />
+          </div>
+          <div class="center-content imgrowhalf boom">
+            <img
+              src="images/Explode.gif"
+              class="cursor"
+              onclick="dangerExplosion()"
+            />
+          </div>
+        </div>
+        <div class="gifrow">
+          <div class="center-content gifhalf dark-grey hover-button">
+            <img
+              src="images/realmarco.gif"
+              onclick=" soundMarco()"
+              id="Marco"
+            />
+            <audio
+              src="Sounds/Intromarco.mp3"
+              type="audio/mp3"
+              id="marcosound"
+            ></audio>
+          </div>
+          <div class="center-content gifhalf black hover-button">
+            <img
+              src="images/realeri.gif"
+              onclick="casamotoSound()"
+              id="Kasamoto"
+            />
+            <audio
+              src="Sounds/Intro Kasa.mp3"
+              type="audio/mp3"
+              id="erisound"
+            ></audio>
+          </div>
+        </div>
+      </div>
+      <div class="botrow">
+        <div class="imgrow white">
+          <div class="center-content imgrowhalf foodback">
+            <img src="images/Food.gif" class="cursor" onclick="fatFood()" />
+          </div>
+          <div class="center-content imgrowhalf alienback">
+            <img src="images/Alien.gif" class="cursor" onclick="theWin()" />
+          </div>
+        </div>
+        <div class="gifrow">
+          <div class="center-content gifhalf white hover-button">
+            <img src="images/realtarma.gif" onclick="soundTarma()" id="Tarma" />
+            <audio
+              src="Sounds/IntroKar.mp3"
+              type="audio/mp3"
+              id="tamsound"
+            ></audio>
+          </div>
+          <div class="center-content gifhalf light-grey hover-button">
+            <img src="images/realfio.gif" onclick="soundFio()" id="Fio" />
+            <audio
+              src="Sounds/IntroFio.mp3"
+              type="audio/mp3"
+              id="fiosound"
+            ></audio>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Function to change the YouTube video when the image is clicked
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

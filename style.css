@@ -1,0 +1,281 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: block;
+  background-color: rgb(255, 255, 255);
+}
+.top-1 {
+  height: 35%;
+  width: 100%;
+  display: flex;
+}
+.topsides {
+  width: 30%;
+  height: 100%;
+}
+.topmid {
+  width: 40%;
+  height: 100%;
+}
+.hover-button {
+  padding: 0px 0px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+.hover-button:hover {
+  transform: scale(0.95);
+  box-shadow: 0 20px 80px 30px rgba(246, 220, 105, 0.9);
+}
+.cursor {
+  cursor: pointer;
+  transition: transform 1s ease, filter 0.5s ease;
+  transform-style: preserve-3d;
+  position: relative;
+  display: inline-block;
+  perspective: 100%;
+  filter: brightness(50%) drop-shadow(2px 8px 3px);
+}
+.rest {
+  cursor: pointer;
+}
+
+.cursor:hover {
+  transform: rotateZ(360deg) scale(1.01);
+  filter: brightness(100%) drop-shadow(2px 8px 3px);
+  /* Flip the image around the Y-axis */
+}
+
+.cursor:active {
+  transform: rotateY(180deg) scale(0.95);
+  filter: drop-shadow(0px 0px 3px);
+
+  /* Darken the image when clicked */
+}
+.tankback {
+  background-image: url("Backgrounds/tankback.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.boom {
+  background-image: url("Backgrounds/boom.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.foodback {
+  background-image: url("Backgrounds/backfood.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alienback {
+  background-image: url("Backgrounds/ENd.gif");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gaming_text {
+  font-family: "Reggae One", system-ui;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 95%;
+  padding: 25px;
+}
+
+/* Hover effect */
+
+.bottom-1 {
+  height: 65%;
+  width: 100%;
+  display: flex;
+}
+.botrow {
+  height: 100%;
+  width: 50%;
+  display: block;
+}
+.imgrow {
+  height: 30%;
+  width: 100%;
+  display: flex;
+}
+.imgrowhalf {
+  height: 100%;
+  width: 50%;
+}
+.gifrow {
+  height: 70%;
+  width: 100%;
+  display: flex;
+}
+.gifhalf {
+  height: 100%;
+  width: 50%;
+  background-image: url("Backgrounds/select.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+img {
+  max-width: 70%;
+
+  max-height: 70%;
+}
+.center-content {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+/* opaque = not able to be seen through, the default opacity for elements is 1 */
+/* transparent = totally see-through, this would be an opacity of 0 */
+.translucent {
+  opacity: 0.5;
+}
+
+/* colors */
+.green {
+  background-color: #008d24;
+}
+.light_blue {
+  background-color: #0b69c0;
+}
+.purple {
+  background-color: #3a246d;
+}
+.red {
+  background-color: #ca1b22;
+}
+.orange {
+  background-color: #ea6626;
+}
+.black {
+  background-color: #000000;
+}
+.white {
+  background-color: #ffffff;
+}
+.light-grey {
+  background-color: #a9a9a9;
+}
+.dark-grey {
+  background-color: #707070;
+}
+
+.f1 {
+  content: url("images/32308-ezgif.com-resize.gif");
+}
+.f2 {
+  content: url("images/Fiofat.gif");
+}
+.f3 {
+  content: url("images/fioex.gif");
+}
+.f4 {
+  content: url("images/Fiowin.gif");
+}
+.e1 {
+  content: url("images/tank2.gif");
+}
+.e2 {
+  content: url("images/eri-fat-duck.gif");
+}
+.e3 {
+  content: url("images/Eriex.gif");
+}
+.e4 {
+  content: url("images/Eriwin.gif");
+}
+
+.t1 {
+  content: url("images/machinem.gif");
+}
+.t2 {
+  content: url("images/Tarma-fat.gif");
+}
+.t3 {
+  content: url("images/Tarmaex.gif");
+}
+.t4 {
+  content: url("images/Tarmawin.gif");
+}
+.m1 {
+  content: url("images/tank4.gif");
+}
+.m2 {
+  content: url("images/Marco-fat.gif");
+}
+.m3 {
+  content: url("images/Marcoex.gif");
+}
+.m4 {
+  content: url("images/Marcowin.gif");
+}
+
+.gone {
+  display: none;
+}
+.invisible {
+  visibility: hidden;
+}
+h1 {
+  font-size: 100px;
+}
+@media only screen and (max-width: 600px) {
+  .gaming_text {
+    font-family: "Reggae One", system-ui;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 60%;
+    padding: 10px;
+  }
+  .top-1 {
+    height: 50%;
+    width: 100%;
+    display: flex;
+  }
+  .topsides {
+    height: 100%;
+    width: 15%;
+  }
+  .topmid {
+    height: 100%;
+    width: 70%;
+  }
+  .bottom-1 {
+    height: 50%;
+    width: 100%;
+    display: block;
+  }
+  .imgrow {
+    height: 30%;
+    width: 100%;
+    display: flex;
+  }
+  .imgrowhalf {
+    width: 50%;
+    height: 100%;
+  }
+  .botrow {
+    width: 100%;
+    height: 50%;
+  }
+  .gifrow {
+    width: 100%;
+    height: 70%;
+    display: flex;
+  }
+  .gifhalf {
+    width: 50%;
+    height: 100%;
+    background-position: top;
+  }
+}
